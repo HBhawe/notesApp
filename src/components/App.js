@@ -35,6 +35,7 @@ function App() {
 
   function showNoteForm() {
     setShowNewNoteForm(!showNewNoteForm);
+    setOpenNote("")
   }
 
   function handleNewNote(e, noteName) {
