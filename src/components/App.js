@@ -40,6 +40,9 @@ function App() {
 
   function handleNewNote(e, noteName) {
     e.preventDefault();
+    
+    // guard clause to prevent empty note names
+    if (!noteName) return;
 
     const newNote = {
       title: noteName,
